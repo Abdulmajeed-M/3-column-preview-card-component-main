@@ -1,0 +1,50 @@
+@use "../custom" as *;
+
+body {
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    background-color: $light;
+    max-width: 100%;
+}
+
+.card-1 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    a {
+        color: $primary;
+    }
+}
+
+.card-2 {
+    border-radius: 0;
+    a {
+        color: $secondary;
+    }
+}
+
+.card-3 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;  
+    a {
+        color: $success;
+    }
+}
+
+.card {
+
+    h2 {
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 700;
+    }
+
+    a {
+        border: 3px solid $light;
+        background-color: $light;
+
+        &:hover {
+            background: rgba($light,0.1);
+            color: $light;
+        }
+    }
+}
